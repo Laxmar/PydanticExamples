@@ -1,0 +1,22 @@
+// https://microsoft.github.io/pyright/#/configuration?id=diagnostic-settings-defaults
+{
+    "pythonVersion": "3.10",
+    "pytonPlatform": "Linux",
+    "strict": [
+        "./"
+    ],
+    "include": [
+        "./"
+    ],
+    "exclude": [
+        "**/node_modules",
+        "**/__pycache__",
+        "env"
+    ],
+    "ignore": [
+    ],
+    "defineConstant": {
+        "DEBUG": true
+    },
+    "stubPath": "src/stubs",
+}
