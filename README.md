@@ -1,23 +1,21 @@
 # Pydantic Examples
 
 ## TODOs
-- [x] basic example & intro
-- dataclass vs BaseModel Difference
-  - [x] Usage difference
+- 1. Intro
+  - [x] dataclass vs BaseModel
   - [x] Validation
   - [x] Coercions
-  - [x] Advanced Validation
-- Serialization
-  - [x] Dict Serialization
-  - [x] Json Serialization
-- Advance Features
+  - [x] StrictMode
+- 2. Serialization
+- 3. Validation
+- 4. Advanced Validation
   - [x] field validator
   - [x] model validator
+- 5. Advance Init
+  - [x] PostInit
   - [x] Computed_field
-  - [ ] PostInit
-  - [ ] StrictMode
-  - [ ] TypeAdapters
-- Usage
+- 6. [ ] TypeAdapters
+- 7. Usage
   - [ ] Loading script configuration
   - [ ] Hydra
   - [ ] FastAPI
