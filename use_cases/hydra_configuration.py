@@ -13,8 +13,8 @@ log = logging.getLogger(__name__)
 
 
 class TrainingConfiguration(BaseModel):
-	batch_size: Annotated[PositiveInt, Field(gt=0, lt=512)]
-	epochs: Annotated[PositiveInt, Field(gt=0, lt=200)]
+	batch_size: Annotated[int, Field(gt=0, lt=512)]  # gt=0 is the same as PositiveInt
+	epochs: Annotated[PositiveInt, Field(lt=200)]
 	learning_rate: Annotated[float, Field(gt=0.0, lt=1.0)]
 	training_dataset: Path
 	validation_dataset: Path
