@@ -13,9 +13,8 @@ It Contains:
    - [x] model validator
 5. [Advance Init](5_advance_init.ipynb)
      - [x] PostInit
-     - [x] Computed_field
+     - [x] Computed field
 6. TypeAdapters
 7. Usage
-   - [ ] Loading script configuration
    - [ ] Hydra
    - [ ] FastAPI
