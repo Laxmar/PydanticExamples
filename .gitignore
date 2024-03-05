@@ -1,5 +1,7 @@
 examples/*.json
 .vscode/
+.gitignore
+outputs/*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

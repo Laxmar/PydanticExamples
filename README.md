@@ -16,5 +16,5 @@ It Contains:
      - [x] Computed field
 6. TypeAdapters
 7. Usage
-   - [ ] Hydra
+   - [x] Hydra
    - [ ] FastAPI
