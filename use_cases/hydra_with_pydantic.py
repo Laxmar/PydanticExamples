@@ -23,8 +23,6 @@ class TrainingConfiguration(BaseModel):
     timestamp: datetime = datetime.now()
     git_revision_hash: str = get_git_revision_hash()
 
-    long: int
-
     @computed_field
     def training_unique_name(self) -> str:
         return self.output_dir.stem
@@ -57,12 +55,12 @@ def main(config: DictConfig):
     """
     Examples How to run:
 
-    python use_cases/hydra_configuration.py
-    python use_cases/hydra_configuration.py -cn training_default.yaml
-    python use_cases/hydra_configuration.py batch_size=128
-    python use_cases/hydra_configuration.py batch_size=10000
-    python use_cases/hydra_configuration.py learning_rate=1.5
-    python use_cases/hydra_configuration.py training_dataset=datasets/iris.csv
+    python use_cases/hydra_with_pydantic.py
+    python use_cases/hydra_with_pydantic.py -cn training_default.yaml
+    python use_cases/hydra_with_pydantic.py batch_size=128
+    python use_cases/hydra_with_pydantic.py batch_size=10000
+    python use_cases/hydra_with_pydantic.py learning_rate=1.5
+    python use_cases/hydra_with_pydantic.py training_dataset=datasets/iris.csv
     """
     try:
         train_config = TrainingConfiguration.model_validate(config)
